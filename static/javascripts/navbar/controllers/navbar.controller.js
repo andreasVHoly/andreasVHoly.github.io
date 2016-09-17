@@ -21,17 +21,20 @@
         vm.openNav = openNav;
         vm.closeNav = closeNav;
 
+        vm.content = 0;
+
+        vm.expanded = true;
 
         function openNav() {
-            console.log("pressed open");
             document.getElementById("mySidenav").style.width = "100%";
+            vm.expanded = true;
         }
 
-        function closeNav() {
-            console.log("pressed close");
-            document.getElementById("mySidenav").style.width = "25%";
+        function closeNav(choice) {
+            document.getElementById("mySidenav").style.width = "15%";
+            vm.content = choice;
+            vm.expanded = false;
         }
-
 
     }
 })();

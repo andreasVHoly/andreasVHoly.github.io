@@ -15,8 +15,9 @@
   "dependencies": {
     "bootstrap": "3.3.x",
     "bootstrap-material-design": "0.5.10",
-	"jquery": null,
+    "jquery": null,
     "angular": null,
-    "angular-route": null
+    "angular-route": null,
+    "font-awesome": "^4.6.3"
   }
 }

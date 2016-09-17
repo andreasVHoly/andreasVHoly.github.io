@@ -24,6 +24,6 @@ run.$inject = ['$http'];
  */
 function run($http) {
     $.material.init();
-    console.log("started app");
+    // console.log("started app");
 }
 

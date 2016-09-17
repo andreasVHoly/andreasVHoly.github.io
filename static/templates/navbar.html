@@ -1,0 +1,99 @@
+<div id="mySidenav" class="sidenav">
+    <div ng-show="vm.expanded" class="row center-icon">
+        <img class="img-responsive img-circle inline imagedim" src="static/images/PP.jpg">
+        <a href="#" ng-click="vm.openNav()"><h1 class="name-heading inline">Andreas von Holy</h1></a>
+        <br><br>
+    </div>
+    <div ng-show="!vm.expanded" class="row container center-icon">
+        <img class="img-responsive img-circle imagedimsmall" src="static/images/PP.jpg">
+        <a href="#" ng-click="vm.openNav()"><h1 class="name-heading">Andreas von Holy</h1></a>
+    </div>
+
+    <div ng-show="vm.expanded">
+        <div class="row">
+            <a class="inline col-md-4 center-icon" href="#" ng-click="vm.closeNav(1)">
+                <i class="material-icons large-icon ">info</i>
+                <div class="row icontext">
+                    About
+                </div>
+            </a>
+            <a class="inline col-md-4 center-icon" href="#" ng-click="vm.closeNav(2)">
+                <i class="material-icons large-icon">folder</i>
+                <div class="row icontext">
+                    Projects
+                </div>
+            </a>
+            <a class="inline col-md-4 center-icon" href="static/docs/CV%20-%20Andreas%20von%20Holy.pdf">
+                <i class="material-icons large-icon">work</i>
+                <div class="row icontext">
+                    CV
+                </div>
+            </a>
+        </div>
+        <br><br>
+    </div>
+    <div ng-show="!vm.expanded">
+        <div class="row side-align">
+            <a href="#" ng-click="vm.closeNav()" title="About">
+                <i class="material-icons small-icon">info</i>
+                <h4 class="side-align-text">About</h4>
+            </a>
+        </div>
+        <div class="row side-align" title="Projects">
+            <a href="#" ng-click="vm.closeNav()">
+                <i class="material-icons small-icon">folder</i>
+                <h4 class="side-align-text">Projects</h4>
+            </a>
+        </div>
+        <div class="row side-align" title="CV">
+            <a href="static/docs/CV%20-%20Andreas%20von%20Holy.pdf">
+                <i class="material-icons small-icon">work</i>
+                <h4 class="side-align-text">CV</h4>
+            </a>
+        </div>
+
+    </div>
+    <div ng-show="vm.expanded">
+        <div class="row">
+            <a class="inline col-md-4 center-icon" href="https://www.linkedin.com/in/andreas-von-holy-4a87026b">
+                <i class="fa fa-linkedin-square large-icon" aria-hidden="true"></i>
+                <div class="row icontext">
+                    LinkedIn Profile
+                </div>
+            </a>
+            <a class="inline col-md-4 center-icon" href="mailto:andreas409@gmail.com">
+                <i class="material-icons large-icon">email</i>
+                <div class="row icontext">
+                    Email
+                </div>
+            </a>
+            <a class="inline col-md-4 center-icon" href="https://github.com/andreasVHoly">
+                <i class="fa fa-github-square large-icon" aria-hidden="true"></i>
+                <div class="row icontext">
+                    GitHub Profile
+                </div>
+            </a>
+        </div>
+    </div>
+    <div ng-show="!vm.expanded">
+        <hr>
+        <div class="row side-align" title="Contact">
+            <a class="hoversection" href="mailto:andreas409@gmail.com">
+                <i class="material-icons small-icon">email</i>
+                <h4 class="side-align-text">Email</h4>
+            </a>
+        </div>
+        <div class="row side-align" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/andreas-von-holy-4a87026b">
+                <i class="fa fa-linkedin-square small-icon" aria-hidden="true"></i>
+                <h4 class="side-align-text">LinkedIn</h4>
+            </a>
+        </div>
+        <div class="row side-align" title="GitHub">
+            <a href="https://github.com/andreasVHoly">
+                <i class="fa fa-github-square small-icon" aria-hidden="true"></i>
+                <h4 class="side-align-text">GitHub</h4>
+            </a>
+        </div>
+    </div>
+</div>
