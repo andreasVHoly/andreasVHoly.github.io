@@ -1,0 +1,20 @@
+{
+  "name": "my-website",
+  "homepage": "andreasvonholy.com",
+  "authors": [
+    "Andreas <andreas409@gmail.com>"
+  ],
+  "description": "Webiste for personal use and information.",
+  "main": "index.html",
+  "keywords": [
+    "website",
+    "personal"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap-material-design": null,
+    "bootstrap": null,
+	"jquery": null
+  }
+}
