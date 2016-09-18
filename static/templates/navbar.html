@@ -23,7 +23,8 @@
                     Projects
                 </div>
             </a>
-            <a class="inline col-md-4 center-icon" href="static/docs/CV%20-%20Andreas%20von%20Holy.pdf">
+            <!--<a class="inline col-md-4 center-icon" href="static/docs/CV%20-%20Andreas%20von%20Holy.pdf">-->
+            <a class="inline col-md-4 center-icon" href="#" ng-click="vm.closeNav(3)">
                 <i class="material-icons large-icon">work</i>
                 <div class="row icontext">
                     CV
@@ -34,19 +35,20 @@
     </div>
     <div ng-show="!vm.expanded">
         <div class="row side-align">
-            <a href="#" ng-click="vm.closeNav()" title="About">
+            <a href="#" ng-click="vm.closeNav(1)" title="About">
                 <i class="material-icons small-icon">info</i>
                 <h4 class="side-align-text">About</h4>
             </a>
         </div>
         <div class="row side-align" title="Projects">
-            <a href="#" ng-click="vm.closeNav()">
+            <a href="#" ng-click="vm.closeNav(2)">
                 <i class="material-icons small-icon">folder</i>
                 <h4 class="side-align-text">Projects</h4>
             </a>
         </div>
         <div class="row side-align" title="CV">
-            <a href="static/docs/CV%20-%20Andreas%20von%20Holy.pdf">
+            <!--<a href="static/docs/CV%20-%20Andreas%20von%20Holy.pdf">-->
+            <a href="#" ng-click="vm.closeNav(3)">
                 <i class="material-icons small-icon">work</i>
                 <h4 class="side-align-text">CV</h4>
             </a>

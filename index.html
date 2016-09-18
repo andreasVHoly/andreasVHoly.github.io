@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="static/bower_components/bootstrap-material-design/dist/css/ripples.min.css">
     <link rel="stylesheet" href="static/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
     <link rel="stylesheet" href="static/bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="static/bower_components/font-awesome/css/font-awesome.min.css">
 
 
@@ -39,19 +39,16 @@
     <div ng-include src="'static/templates/navbar.html'"></div>
         <div ng-switch="vm.content">
             <div ng-switch-when="0">
-                sneaky hidden text :D
+                loading....
             </div>
             <div ng-switch-when="1" class="nav_spacer">
-                <div class="container">
-
-                </div>
+                <div ng-include src="'static/templates/about.html'"></div>
             </div>
             <div ng-switch-when="2">
-                <div class="container">
-                    <h1>3rd Year Final Project - Terminal Reality</h1>
-                    <hr>
-                    <h1>Honours Project - BantuWeb</h1>
-                </div>
+                <div ng-include src="'static/templates/projects.html'"></div>
+            </div>
+            <div ng-switch-when="3">
+                <div ng-include src="'static/templates/work.html'"></div>
             </div>
         </div>
     </div>
