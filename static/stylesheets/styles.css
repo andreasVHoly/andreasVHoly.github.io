@@ -6,7 +6,7 @@ body {
 
 .sidenav {
     height: 100%;
-    width: 100%;
+    /*width: 100%;*/
     position: fixed;
     z-index: 1;
     top: 0;
@@ -75,9 +75,9 @@ body {
     display: inline-block;
 }
 
-.nav_spacer{
-    padding-left: 15%;
-}
+/*.nav_spacer{*/
+    /*padding-left: 15%;*/
+/*}*/
 
 /*IMAGE*/
 
