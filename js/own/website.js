@@ -5,13 +5,11 @@
     // angular.module('my_website',[]);
 
     angular.module('my_website', [
-        // 'my_website.config',
         'my_website.routes',
         'my_website.navbar'
     ]);
 
     angular.module('my_website.routes', ['ngRoute']);
-    // angular.module('my_website.config', []);
 
 })();
 
@@ -24,6 +22,5 @@ run.$inject = ['$http'];
  */
 function run($http) {
     $.material.init();
-    // console.log("started app");
 }
 

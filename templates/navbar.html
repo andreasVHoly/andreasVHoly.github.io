@@ -1,9 +1,9 @@
 <div id="mySidenav">
     <div ng-show="vm.expanded" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sidenav">
-        <div ng-include="'static/templates/expanded.html'"></div>
+        <div ng-include="'templates/expanded.html'"></div>
     </div>
     <div ng-show="!vm.expanded" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 sidenav">
-        <div ng-include="'static/templates/contracted.html'"></div>
+        <div ng-include="'templates/contracted.html'"></div>
     </div>
 </div>
 <div ng-show="!vm.expanded">
@@ -12,13 +12,13 @@
             loading....
         </div>
         <div ng-switch-when="1">
-            <div ng-include="'static/templates/about.html'"></div>
+            <div ng-include="'templates/about.html'"></div>
         </div>
         <div ng-switch-when="2">
-            <div ng-include="'static/templates/projects.html'"></div>
+            <div ng-include="'templates/projects.html'"></div>
         </div>
         <div ng-switch-when="3">
-            <div ng-include="'static/templates/work.html'"></div>
+            <div ng-include="'templates/work.html'"></div>
         </div>
     </div>
 </div>

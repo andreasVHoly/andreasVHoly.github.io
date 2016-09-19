@@ -10,12 +10,12 @@
         .module('my_website.navbar.controllers')
         .controller('NavController', NavController);
 
-    NavController.$inject = ['$location', '$scope'];
+    NavController.$inject = ['$location'];
 
     /**
      * @namespace NavController
      */
-    function NavController($scope) {
+    function NavController($location) {
 
         var vm = this;
         vm.openNav = openNav;
@@ -34,7 +34,18 @@
         function closeNav(choice) {
             // document.getElementById("mySidenav").style.width = "16%";
             document.getElementById("mySidenav").setAttribute('class', 'col-xs-2 col-sm-2 col-md-2 col-lg-2 sidenav');
-            vm.content = choice;
+            // vm.content = choice;
+            switch(choice){
+                case 1:
+                    $location.url('/about');
+                    break;
+                case 2:
+                    $location.url('/projects');
+                    break;
+                case 3:
+                    $location.url('/work');
+                    break;
+            }
             vm.expanded = false;
         }
 
