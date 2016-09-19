@@ -5,11 +5,9 @@
     // angular.module('my_website',[]);
 
     angular.module('my_website', [
-        'my_website.routes',
         'my_website.navbar'
     ]);
 
-    angular.module('my_website.routes', ['ngRoute']);
 
 })();
 
